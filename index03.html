@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas Editor</title>
+    <script src="https://cdn.jsdelivr.net/npm/interactjs@1.9.20/dist/interact.min.js"></script>
+
+    <link rel="stylesheet" href="index03.css">
+    <!-- <style></style> -->
+</head>
+
+<body>
+
+    <div id="toolbar">
+        <button id="add-text">Add Text</button>
+        <button id="add-image">Add Image</button>
+        <button id="add-video">Add Video</button>
+
+        <div class="upload-button">
+            <!-- <input type="file" id="video-input" accept="video/*"> -->
+            
+            <label for="video-speed">Video Speed:</label>
+            <input type="range" class="video-speed-input" min="0.5" max="2" step="0.1" value="1">
+            
+            <label for="video-size">Video Size:</label>
+            <input type="range" class="video-size-input" min="0.5" max="2" step="0.1" value="1">
+            
+            <button id="play-video">Play</button>
+            <button id="pause-video">Pause</button>
+        </div>
+
+        <div>
+            <div>
+                <label for="-color-input">Text color:</label>
+                <button id="add-color">Add color</button>
+                <input type="color" id="color-input">
+            </div>
+            <label for="-font-family-select">Font family:</label>
+            <select id="font-family-select">
+                <option value="Arial">Arial</option>
+                <option value="Helvetica">Helvetica</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Courier New">Courier New</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Comic Sans MS">Comic Sans MS</option>
+                <option value="Impact">Impact</option>
+                <option value="Palatino">Palatino</option>
+                <option value="Garamond">Garamond</option>
+            </select>
+            <label for="-font-size-input">Font size:</label>
+            <input type="range" id="font-size-input" min="8" max="72" step="1" value="12">
+        </div>
+
+        <button id="delete">Delete</button>
+    </div>
+    
+    <div id="canvas"></div>
+
+    <script src="index05.js"></script>
+
+
+</body>
+
+</html>
